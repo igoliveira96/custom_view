@@ -20,5 +20,10 @@ class MainActivity : AppCompatActivity() {
                 binding.progressButton.setNormal()
             }
         }
+
+        binding.circle.setOnClickListener {
+            (it as CircleView).setRandomColor()
+            it.invalidate()
+        }
     }
 }
